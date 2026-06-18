@@ -1,15 +1,8 @@
 import type { Metadata, Viewport } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
 
-const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin'] })
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-})
-
 export const metadata: Metadata = {
-  title: 'Sử Việt — Khám phá lịch sử Việt Nam theo một cách mới',
+  title: 'Sử Việt - Khám phá lịch sử Việt Nam theo một cách mới',
   description:
     'Nền tảng khám phá lịch sử Việt Nam tương tác: không gian lịch sử 3D và bầu trời nhân vật dạng chòm sao tri thức.',
   generator: 'v0.app',
@@ -43,7 +36,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="vi" className={`dark ${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="vi" className="dark">
       <body className="bg-background font-sans antialiased">{children}</body>
     </html>
   )

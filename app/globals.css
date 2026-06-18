@@ -54,6 +54,8 @@
 
 :root {
   color-scheme: dark;
+  --font-geist-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-geist-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
   /* Deep navy night sky */
   --background: oklch(0.21 0.045 255);
   --foreground: oklch(0.93 0.025 90);
